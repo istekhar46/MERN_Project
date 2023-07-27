@@ -44,6 +44,7 @@ const registerUser = asyncHandler(async (req, res) => {
         name,
         email,
         password
+        //this password is hashed in user model with schema method called pre()
     })
 
     if (user) {
