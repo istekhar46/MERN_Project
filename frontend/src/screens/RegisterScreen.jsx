@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import Loader from "../components/Loader";
 import FormContainer from "../components/FormContainer";
-import { useRegisterMutation } from "../slices/userApiSlice";
+import { useRegisterMutation } from "../slices/user/userApiSlice";
 import { setCredentials } from "../slices/authSlice";
 
 const RegisterScreen = () => {

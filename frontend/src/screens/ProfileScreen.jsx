@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import Loader from "../components/Loader";
 import FormContainer from "../components/FormContainer";
-import { useUpdateProfileMutation } from "../slices/userApiSlice";
+import { useUpdateProfileMutation } from "../slices/user/userApiSlice";
 import { setCredentials } from "../slices/authSlice";
 
 const ProfileScreen = () => {

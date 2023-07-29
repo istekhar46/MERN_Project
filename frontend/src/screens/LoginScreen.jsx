@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import FormContainer from "../components/FormContainer";
-import { useLoginMutation } from "../slices/userApiSlice";
+import { useLoginMutation } from "../slices/user/userApiSlice";
 import { setCredentials } from "../slices/authSlice";
 import Loader from "../components/Loader";
 
