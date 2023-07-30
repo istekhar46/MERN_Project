@@ -21,6 +21,9 @@ const DisplayProfile = () => {
     try {
       const res = await getBlog().unwrap();
       dispatch(setBlogs({ ...res }));
+      if (userBlogs.blog.length === 0) {
+        toast.info("No blogs found");
+      }
     } catch (err) {
       toast.error(err?.data?.message || err.error);
     }
@@ -67,9 +70,11 @@ const DisplayProfile = () => {
                 {blog.map((blog) => (
                   <Col key={blog._id} xs={12} md={4}>
                     <BlogItems
+                      id={blog._id}
                       heading={blog.heading}
                       author={blog.author}
                       text={blog.text}
+                      date={blog.user}
                     />
                   </Col>
                 ))}

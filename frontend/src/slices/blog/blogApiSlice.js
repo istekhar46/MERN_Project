@@ -18,8 +18,14 @@ const blogsApiSlice = apiSlice.injectEndpoints({
                 method: 'GET',
             })
         }),
+        deleteBlog: buider.mutation({
+            query: (id)=>({
+                url:`${BLOGS_URL}/userblogs/${id}`,
+                method: 'DELETE',
+            })
+        }),
     })
 })
 
 
-export const {useCreateBlogMutation, useGetBlogMutation} = blogsApiSlice ;
+export const {useCreateBlogMutation, useGetBlogMutation, useDeleteBlogMutation} = blogsApiSlice ;
