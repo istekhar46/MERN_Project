@@ -38,12 +38,12 @@ const DisplayProfile = () => {
             <Card className="mx-2" style={{ width: "20rem" }}>
               <Card.Body>
                 <Card.Title>Profile</Card.Title>
-                <Card.Text className="my-2 mx-2">
-                  Name - {userInfo.name}
-                </Card.Text>
-                <Card.Text className="my-2 mx-2">
-                  Email - {userInfo.email}
-                </Card.Text>
+                <Card.Subtitle className="my-2 mx-2">
+                  Name: {userInfo.name}
+                </Card.Subtitle>
+                <Card.Subtitle className="my-2 mx-2">
+                  Email: {userInfo.email}
+                </Card.Subtitle>
                 <LinkContainer to="/createblogs">
                   <Button type="button" className="mx-2">
                     Create Blogs
@@ -68,7 +68,7 @@ const DisplayProfile = () => {
             {blog.length > 0 ? (
               <Row>
                 {blog.map((blog) => (
-                  <Col key={blog._id} xs={12} md={4}>
+                  <Col key={blog._id} xs={12} md={6}>
                     <BlogItems
                       id={blog._id}
                       heading={blog.heading}

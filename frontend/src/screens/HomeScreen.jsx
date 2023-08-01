@@ -1,11 +1,16 @@
-import Hero from "../components/Hero"
- 
+import { Container } from "react-bootstrap";
+import Hero from "../components/Hero";
+import PublicBlogContainer from "../components/PublicBlogContainer";
+
 const HomeScreen = () => {
   return (
     <>
-    <Hero/>
+      <Container>
+        <Hero />
+        <PublicBlogContainer />
+      </Container>
     </>
-  )
-}
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;

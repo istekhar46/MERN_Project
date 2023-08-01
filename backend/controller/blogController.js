@@ -6,7 +6,6 @@ import Blog from '../models/blogModel.js';
 
 const publicBlogs = async (req, res) => {
     const blog = await Blog.find({});
-
     res.status(200).json({ blog })
 
 }
