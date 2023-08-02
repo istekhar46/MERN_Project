@@ -1,6 +1,6 @@
 import { apiSlice } from "../apiSlice";
 
-const BLOGS_URL = 'https://blogsite-fpfc.onrender.com/api/blogs';
+const BLOGS_URL = '/api/blogs';
 
 
 const blogsApiSlice = apiSlice.injectEndpoints({
