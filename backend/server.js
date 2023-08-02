@@ -1,4 +1,5 @@
 import path from 'path'
+import cors from 'cors'
 import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
@@ -7,6 +8,7 @@ import connectDB from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js"
 import blogRoutes from "./routes/blogsRoutes.js"
 dotenv.config();
+app.use(cors())
 
 
 const port = process.env.PORT;
