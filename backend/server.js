@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === 'production') {
 } else {
   // Display a message if not in production
   app.get('/', (req, res) => {
-    res.send('API is running....');
+    res.send('Server is Running');
   });
 }
 
