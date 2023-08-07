@@ -26,7 +26,7 @@ const BlogItems = ({ heading, author, text, id }) => {
   }
   return (
     <Container>
-      <Card className="my-2 " style={{ width: "100%" }}>
+      <Card className="my-2 border-0 w-100%">
         <Card.Body style={{ backgroundColor: "#e8f7fc" }}>
           <button
             style={{

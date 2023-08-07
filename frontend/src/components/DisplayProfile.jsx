@@ -35,7 +35,7 @@ const DisplayProfile = () => {
           <Container className="my-5">
             <h1>Welcome {userInfo.name}</h1>
 
-            <Card className="mx-2" style={{ width: "20rem" }}>
+            <Card className="mx-2  " style={{ width: "20rem" }}>
               <Card.Body>
                 <Card.Title>Profile</Card.Title>
                 <Card.Subtitle className="my-2 mx-2">

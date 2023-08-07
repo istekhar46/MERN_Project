@@ -33,7 +33,7 @@ const PublicBlogContainer = () => {
             <Row>
               {publicBlog.map((blog) => (
                 <Col  key={blog._id} className="my-2" xs={12} md={12}>
-                  <Card>
+                  <Card className="border-0">
                     <Card.Body style={{ backgroundColor: "#e8f7fc" }}>
                       <Card.Title className="flex" style={{ color: "#0f4c81" }}>{blog.heading}</Card.Title>
                       <Card.Subtitle>Writer: {blog.author}</Card.Subtitle>
