@@ -21,6 +21,7 @@ const PublicBlogContainer = () => {
   useEffect(() => {
     fetchPublicBlogs();
   }, []);
+
   return (
     <>
       <Container>
@@ -50,7 +51,8 @@ const PublicBlogContainer = () => {
                           {blog.heading}
                         </Card.Title>
                         <Card.Subtitle>Writer: {blog.author}</Card.Subtitle>
-                        <Card.Text className="mt-4">{blog.text}</Card.Text>
+                        {/* <Card.Text className="mt-4">{blog.text}</Card.Text> */}
+                        {blog.text.split(' ').slice(0, 150).join(' ')} ...
                       <Button className='position-absolute bottom-0 end-0'>Read More</Button>
                       </Container>
                     </Card.Body>
