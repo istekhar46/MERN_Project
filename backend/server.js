@@ -6,6 +6,7 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import connectDB from './config/db.js';
 import userRoutes from './routes/userRoutes.js';
 import blogRoutes from './routes/blogsRoutes.js';
+import searchRoutes from './routes/searchRoutes.js';
 
 dotenv.config();
 const port = process.env.PORT;
@@ -22,6 +23,7 @@ app.use(cookieParser());
 // API routes
 app.use('/api/users', userRoutes);
 app.use('/api/blogs', blogRoutes);
+app.use('/api/search', searchRoutes);
 
 // Serve the frontend in production
 if (process.env.NODE_ENV === 'production') {
